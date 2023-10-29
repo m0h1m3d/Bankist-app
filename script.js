@@ -60,6 +60,7 @@ const inputTransferAmount = document.querySelector('.form__input--amount');
 const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
+const users = document.querySelector('.users');
 
 
 const displayMovements = function (movements, sort = false) {
@@ -150,6 +151,7 @@ btnLogin.addEventListener('click', function (e) {
     labelWelcome.textContent = `Welcome ${currentAcount.owner.split(' ')[0]}`;
 
     containerApp.style.opacity = 100;
+    users.style.display = 'none';
 
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
@@ -206,6 +208,7 @@ btnClose.addEventListener('click', function (e) {
     accounts.splice(index, 1);
 
     containerApp.style.opacity = 0;
+    users.style.display = 'block';
 
   };
 
