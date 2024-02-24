@@ -1,7 +1,17 @@
 # Bankist-app
 This is a bankist app project completed with jonas's complete javasctipt course from zero to expert
+![](/app.png)
 
-# ACCOUNTS DATA:
+## Features
+login/logout feature
+deposits
+loan requests
+sorting movements
+date and time of movements
+
+## ACCOUNTS DATA:
+![](/login.png)
+
 ACCOUNT 1:
 username: js /
 pin: 1111
